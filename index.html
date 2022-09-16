@@ -1,0 +1,451 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Anu Gym | Best Gym in the city</title>
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .form-control:focus {
+            border-color: #ffc107;
+            box-shadow: 0 0 0 0.1rem #e6871b;
+        }
+
+        .About {
+            color: #bc6d12;
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: #ffc107;
+        }
+
+        .carousel-caption {
+            position: absolute;
+            left: 25px;
+            top: 27px;
+            width: 474px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .carousel-caption {
+                position: relative;
+                margin: auto;
+                top: -140px;
+                width: 80%;
+            }
+
+            .btn-outline-warning {
+                font-weight: 600;
+            }
+
+            .carousel-item {
+                height: 279px;
+            }
+
+            .carousel-item img {
+                height: 100%;
+            }
+
+            .carousel-caption h1 {
+                font-size: 20px;
+                font-weight: 600;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-warning">
+        <div class="container-fluid">
+            <a class="navbar-brand text-warning" href="#">Shree Gym</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-warning">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#About">About Us</a>
+                    </li>
+                    <li class="nav-item text-warning">
+                        <a class="nav-link " aria-current="page" href="#Services">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Team">Our Team </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact">Contact Us</a>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-outline-warning mx-2 py-1">Log In</button>
+                <button type="button" class="btn btn-outline-warning mx-2 py-1">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
+        <!-- <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div> -->
+        <div class="carousel-inner">
+            <div class="carousel-item opacity-50 active">
+                <img src="image/gym-img (5).jpg" class="d-block w-100 " alt="...">
+                <div class="carousel-caption  d-md-block text-warning">
+                    <h1>When You Want To Give UP, Real Work Begin</h1>
+                    <!-- <h3>Some representative placeholder content for the first slide.</h3> -->
+                    <button type="button" class="btn btn-outline-warning mx-2 py-1">Join Now</button>
+                </div>
+            </div>
+            <div class="carousel-item opacity-50">
+                <!-- <img src="https://source.unsplash.com/random/1400x400/?gym,sports" class="d-block w-100" alt="..."> -->
+                <img src="image/gym-img (7).jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-md-block text-warning">
+                    <h1>DON'T DECREASE THE GOAL. INCREASE THE EFFORTS. </h1>
+                    <!-- <h3>Some representative placeholder content for the second slide.</h3> -->
+                    <button type="button" class="btn btn-outline-warning mx-2 py-1">Join Now</button>
+                </div>
+            </div>
+            <div class="carousel-item opacity-50">
+                <img src="image/gym-img (4).jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-md-block text-warning">
+                    <h1>All Our Dreams Can Come True If We Have The Courage To Pursue Them</h1>
+                    <!-- <h3>Some representative placeholder content for the third slide.</h3> -->
+                    <button type="button" class="btn btn-outline-warning mx-2 py-1">Join Now</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <div class="container my-3" id="About">
+        <div class="row nopad">
+            <h1 class="About text-center my-2">About Shree Gym</h1>
+            <div class="col-lg-4">
+                <div class="why-us-img">
+                    <img src="https://media.istockphoto.com/photos/fitness-lifestyle-of-young-couple-picture-id472714086?k=20&m=472714086&s=612x612&w=0&h=nf5da5X5RyECiPhvJ4NQSMsGuE7skBCpbLg5dNQaz9Q="
+                        width="100%">
+                </div>
+            </div>
+            <div class="col-md-8 About">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex blanitiis alias sit aperiam, incidunt,
+                    soluta, perferendis tenetur consectetur deserunt enim fugiat iste ad labore quod ipsum beatae odio
+                    harum! Minima modi quis maiores vero, amet delectus.
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam consectetur tenetur, asperiores sint
+                    animi explicabo, temporibus error molestias ea quis aliquam quaerat saepe, nobis velit
+                    cumque!Blanditiis odit itaque nulla ab quae sed laudantium quam.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid " id="Services">
+        <div class="container d-flex justify-content-center About">
+            <h1>Our Services</h1>
+        </div>
+        <div class="row nopad d-flex justify-content-center">
+            <div class="card mx-5 my-4" style="width: 18rem; ">
+                <div style="width: 260px; height: 190px">
+                    <img src="image/personal-training.jpg" class="card-img-top" style="height: 100%;" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title About">Personal Training</h5>
+                    <p class="card-text" style="text-align: justify ;">A personal gym trainer is a certified
+                        professional who has achieved a
+                        competency level to create and develop exercise regimens for people without medical.</p>
+                    <button type="button" class="btn btn-warning mx-2 py-1">Try Now</button>
+                </div>
+            </div>
+            <div class="card mx-5 my-4" style="width: 18rem;">
+                <div style="width: 260px; height: 190px">
+                    <!-- <img src="https://www.you.co.uk/wp-content/uploads/2022/05/outdoor-yoga-class.jpg" class="card-img-top"
+                    alt="..."> -->
+                    <img src="image/yoga-class.webp" class="card-img-top h-100" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title About">Yoga Section</h5>
+                    <p class="card-text" style="text-align: justify ;">These are good ones to learn as you build a
+                        regular yoga practice. These 10
+                        poses are a complete yoga workout. Move slowly through each.</p>
+                    <button type="button" class="btn btn-warning mx-2 py-1">Try Now</button>
+                </div>
+            </div>
+            <div class="card mx-5 my-4" style="width: 18rem;">
+                <div style="width: 260px; height: 190px">
+                    <!-- <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2017/12/16181929/shutterstock_155478860.jpg"
+                    class="card-img-top" alt="..."> -->
+                    <img src="image/body-mussage.jpg" class="card-img-top h-100" alt="" srcset="">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title About">Body Massage</h5>
+                    <p class="card-text" style="text-align: justify ;">Massage is a treatment that uses different kinds
+                        of physical contact to relax,
+                        revive and heal the body. It is used to treat a wide range of.</p>
+                    <button type="button" class="btn btn-warning mx-2 py-1">Try Now</button>
+                </div>
+            </div>
+            <div class="card mx-5 my-4" style="width: 18rem;">
+                <div style="width: 260px; height: 190px">
+                    <!-- <img src="https://cdn.newsapi.com.au/image/v1/578024bca87b1264deaaafe4690f2c94?width=650"
+                    class="card-img-top" alt="..."> -->
+                    <img src="image/diet-plan.webp" class="card-img-top h-100" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title About">Diet planning</h5>
+                    <p class="card-text" style="text-align: justify ;">Planning diets refers to determining what usualv
+                        nutrient intake should be. Regardless of whether one is planning diets for individuals or
+                        groups.
+                        <button type="button" class="btn btn-warning mx-2 py-1 my-2 d-block">Try Now</button>
+                </div>
+            </div>
+            <div class="card mx-5 my-4" style="width: 18rem;">
+                <div style="width: 260px; height: 190px">
+                    <!-- <img src="https://image.made-in-china.com/155f0j00zPGfvjkROZbT/Hot-Sale-Z-Shape-White-and-Wood-Grain-Color-Moisture-Proof-SPA-Lockers.jpg"
+                    class="card-img-top" alt="..."> -->
+                    <img src="image/gym-locker.jpg" class="card-img-toph-100 h-100 w-100" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title About">Lockers</h5>
+                    <p class="card-text" style="text-align: justify ;">Modular Gym Lockers made of anti- corrosive poly
+                        epoxy powder coating CRCA metal. View Complete Details. Fill the quantity to get latest price!
+                    </p>
+                    <button type="button" class="btn btn-warning mx-2 py-1">Try Now</button>
+                </div>
+            </div>
+            <div class="card mx-5 my-4" style="width: 18rem;">
+                <div style="width: 260px; height: 190px">
+                    <!-- <img src="https://neurotags-blog.s3.amazonaws.com/blog/wp-content/uploads/2018/09/sports_goods_counterfeit_2.jpg"
+                    class="card-img-top" alt="..."> -->
+                    <img src="image/weekly-sport.jpg" class="card-img-top h-100" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title About">weekly sports</h5>
+                    <p class="card-text" style="text-align: justify ;">Some quick example text to build on the card
+                        title and make up the bulk of the Lorem ipsum dolor sit amet. card's content.</p>
+                    <button type="button" class="btn btn-warning mx-2 py-1">Try Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid " id="Team">
+        <div class="container d-flex justify-content-center About">
+            <h1>Our Team</h1>
+        </div>
+        <div class="row nopad d-flex justify-content-center">
+            <div class="card mx-5 my-4" style="width: 18rem;">
+                <!-- <img src="https://images.pexels.com/photos/3912944/pexels-photo-3912944.jpeg?auto=compress&cs=tinysrgb&w=400"
+                    class="card-img-top" alt="..."> -->
+                <img src="image/Annu.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title About">Anuu </h5>
+                    <p class="card-text" style="text-align: justify ;">Some quick example text to build on the card
+                        title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            <div class="card mx-5 my-4" style="width: 18rem;">
+                <!-- <img src="https://images.pexels.com/photos/9944859/pexels-photo-9944859.jpeg?auto=compress&cs=tinysrgb&w=400"
+                    alt="..."> -->
+                <img src="image/shrikant.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title About">shrikant </h5>
+                    <p class="card-text" style="text-align: justify ;">Some quick example text to build on the card
+                        title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card mx-5 my-4" style="width: 18rem;">
+                <!-- <img src="https://images.pexels.com/photos/6456303/pexels-photo-6456303.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    class="card-img-top" alt="..."> -->
+                <img src="image/rohan.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title About">Rohan </h5>
+                    <p class="card-text" style="text-align: justify ;">Some quick example text to build on the card
+                        title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- <div class="container-fluid bg-image " style="background-image: url('https://source.unsplash.com/random/1400x400/?gym,sports');-->
+
+    <div class="container my-5" id="Contact">
+        <div class="row">
+            <h1 class="h1-responsive font-weight-bold text-center my-4 About">Contact us</h1>
+            <div class="col-sm">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.897342530144!2d78.22529954948331!3d20.99675179417981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd41440fcd64841%3A0x93560778833bcecf!2sChhatrapati%20Shivaji%20Maharaj%20Chowk%2Carvi!5e0!3m2!1sen!2sin!4v1658496052368!5m2!1sen!2sin"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-sm mt-3 ">
+                <!--Section: Contact v.2-->
+                <section>
+                    <!--Section heading-->
+                    <!--Section description-->
+                    <p class="text-center w-responsive mx-auto About">Do you have any questions? Please do not
+                        hesitate
+                        to contact us directly. Our team will come back to you ASAP to help you.</p>
+
+                    <div class="row">
+
+                        <!--Grid column-->
+                        <div class="col-md-12 mb-md-0 mb-5">
+                            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                                <!--Grid row-->
+                                <div class="row">
+                                    <!--Grid column-->
+                                    <div class="col-md-6">
+                                        <div class="md-form mb-0">
+                                            <label for="name" class="">Your name</label>
+                                            <input type="text" id="name" name="name" class="form-control">
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
+                                    <!--Grid column-->
+                                    <div class="col-md-6">
+                                        <div class="md-form mb-0">
+                                            <label for="email" class="">Your email</label>
+                                            <input type="text" id="email" name="email" class="form-control">
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
+                                </div>
+                                <!--Grid row-->
+                                <!--Grid row-->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="md-form mb-0">
+                                            <label for="subject" class="">Subject</label>
+                                            <input type="text" id="subject" name="subject" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Grid row-->
+                                <!--Grid row-->
+                                <div class="row">
+
+                                    <!--Grid column-->
+                                    <div class="col-md-12">
+                                        <div class="md-form">
+                                            <label for="message">Your message</label>
+                                            <textarea type="text" id="message" name="message" rows="2"
+                                                class="form-control md-textarea"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Grid row-->
+                            </form>
+
+                            <div class="text-center text-md-left">
+                                <a class="btn btn-warning my-3"
+                                    onclick="document.getElementById('contact-form').submit();">Send</a>
+                            </div>
+                            <div class="status"></div>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+
+                </section>
+                <!--Section: Contact v.2-->
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 About">Shree Gym all &copy; copyrights reserved, 2022</p>
+
+            <a href="/"
+                class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+            </a>
+
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="#" class="nav-link px-2 About">Home</a></li>
+                <li class="nav-item"><a href="#About" class="nav-link px-2 About">About Us</a></li>
+                <li class="nav-item"><a href="#Services" class="nav-link px-2 About">Services</a></li>
+                <li class="nav-item"><a href="#Team" class="nav-link px-2 About">Team</a></li>
+                <li class="nav-item"><a href="#Contact" class="nav-link px-2 About">Contact</a></li>
+            </ul>
+        </footer>
+    </div>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+
+</html>
